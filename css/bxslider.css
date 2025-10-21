@@ -1,0 +1,32 @@
+.bx-wrapper{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+.bx-wrapper .bx-controls-direction a{
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    display: block;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(123,198,37,.50) url(../images/arrow9.png) 50% 50% no-repeat;
+    text-indent: -9999px;
+    transition: background .3s linear, border .3s linear;
+}
+.bx-wrapper .bx-controls-direction a.bx-prev{
+    top: -7px;
+    transform: rotate(180deg);
+}
+.bx-wrapper .bx-controls-direction a.bx-next{
+    bottom: -7px;
+}
+.bx-wrapper .bx-controls-direction a:hover{
+    background-color: #7bc625;
+}
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-caption{
+    display: none;
+}
